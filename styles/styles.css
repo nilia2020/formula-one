@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 * {
     /* border: 1px dotted white; */
     box-sizing: border-box;
@@ -6,12 +8,12 @@
     /* variables */
     --blanco: #eeeeee;
     --fondo-oscuro: #220505;
-    --sombra-fondo-rojo: 2px 4px 8px #120505;
-    --sombra-fondo-bordo: 2px 2px 4px rgb(232, 120, 120);
+    --sombra-fondo-rojo: 2px 2px 3px #120505;
+    --sombra-fondo-bordo: 2px 2px 3px rgb(232, 120, 120);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: var(--fondo-oscuro);
     color: var(--blanco);
     font-size: 16px;
@@ -60,6 +62,8 @@ nav ul li a {
     text-decoration: none;
     color: var(--blanco);
     font-weight: 700;
+    font-kerning: normal;
+    font-size: 20px;
     text-shadow: var(--sombra-fondo-bordo);
 }
 
