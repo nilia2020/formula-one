@@ -8,8 +8,11 @@
   <title>🏆 Fórmula Uno</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
+<!-- El html de la tarea 1 se modificó para que sea más facil de aplicar estilos -->
+<!-- las clases se modificaron para escribirlas siguiendo el patrón camelCase recomendado en la clase  -->
 
 <body>
+  <!-- En el header va el logo y el menú de navegación para las cuatro secciones de la página -->
   <header id="menu">
     <nav class="menu">
       <div class="logoNav">
@@ -23,6 +26,7 @@
       </ul>
     </nav>
   </header>
+  <!-- En main van las 3 secciones principales -->
   <main>
     <section id="news">
       <h2>Últimas Noticias</h2>
@@ -82,6 +86,7 @@
         </div>
       </article>
     </section>
+    <!-- En la sección de pilotos hay una tabla con cuatro columnas un encabezado y 20 filas, una para cada piloto -->
     <section id="drivers">
       <h2>Pilotos de la temporada 2022</h2>
       <table summary="Los pilotos de la temperoda 2022 de la Fórmula 1">
@@ -93,6 +98,7 @@
             <th scope="col">Nacionalidad</th>
           </tr>
         </thead>
+        <!-- En la tércera columna se relaciona al piloto con su equipo que se detalla en la siguiente sección -->
         <tbody>
           <tr>
             <td scope="row">Lewis Hamilton</td>
@@ -217,6 +223,7 @@
         </tbody>
       </table>
     </section>
+    <!-- para la sección de pilotos se arman cards con fotos del auto y los pilotos -->
     <section id="teams">
       <h2>Equipos de la temporada 2022</h2>
       <article class="cardTeam">
@@ -442,6 +449,7 @@
       </article>
     </section>
   </main>
+  <!-- en el footer se encuentra la última sección de la página, en la primera parte las redes sociales y mi correo y luego el logo de la F1 y una sección de derechos reservados -->
   <footer id="contact">
     <section class="contacts">
       <h2>Contacto</h2>
@@ -476,7 +484,7 @@
       <div class="logoNav">
         <img src="./images/f1_logo.svg" alt="Formula1-logo" title="Formula one">
       </div>
-      <p>2022 - Formula Uno - Todos los derechos reservados</p>
+      <p>2022 - Formula Uno - todos los derechos reservados</p>
     </section>
   </footer>
 </body>
