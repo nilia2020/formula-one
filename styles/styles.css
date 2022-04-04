@@ -19,6 +19,7 @@ body {
     color: var(--blanco);
     font-size: 16px;
 }
+
 #menu {
     /* Menu sticky para que quede siempre visible al recorrer la página */
     background-color: var(--fondo-menu);
@@ -26,6 +27,7 @@ body {
     position: sticky;
     top: 0px;
 }
+
 nav {
     /* flex para acomodar los elemntos en row */
     display: flex;
@@ -60,7 +62,6 @@ nav ul li span {
     width: 100px;
     height: 30px;
     text-align: center;
-    padding-top: 5px;
 }
 
 nav ul li a {
@@ -77,6 +78,7 @@ nav ul li a:hover {
     font-size: 20px;
     text-shadow: var(--sombra-fondo-bordo);
 }
+
 main {
     border-radius: 4px;
     margin-bottom: 5vh;
@@ -95,6 +97,7 @@ h3 {
     padding: 8px;
     margin-bottom: 16px;
 }
+
 article {
     margin-top: 12px;
     text-align: center;
@@ -156,6 +159,7 @@ td {
     padding: 10px;
     border-radius: 4px;
 }
+
 /* Defino el ancho de las columnas de la tabla según el contenido */
 #drivers thead th:nth-child(1) {
     width: 25%;
@@ -181,10 +185,12 @@ td {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
 /* color de fondo de las filas impares */
 #drivers tbody tr:nth-child(odd) {
     background-color: #120505;
 }
+
 /* color de fondo de las filas pares */
 #drivers tbody tr:nth-child(even) {
     background-color: #150505;
@@ -193,6 +199,7 @@ td {
 #drivers tbody td {
     height: 48px;
 }
+
 /* Cuando paso el mouse aumenta la fuente en la 3ra columna */
 #drivers tbody td:nth-child(3):hover {
     font-size: 18px;
@@ -207,6 +214,7 @@ td {
     width: 90vw;
     margin: 20px auto 20px;
 }
+
 /* Armos cards para cada equipo */
 .cardTeam {
     display: flex;
@@ -217,6 +225,7 @@ td {
     padding: 15px;
     box-shadow: 5px 5px 10px var(--blanco);
 }
+
 /* Defino contenedor izquierda donde va un título y una imagen del auto */
 .cardTeamLeft {
     width: 50vw;
@@ -233,6 +242,7 @@ td {
     font-style: oblique;
     text-shadow: var(--sombra-fondo-bordo);
 }
+
 /* Defino un contenedor derecho donde va la foto de los pilotos y su nombre */
 .cardTeamRight {
     display: flex;
@@ -270,6 +280,7 @@ footer {
     width: 100vw;
     margin: 20px 0 40px;
 }
+
 /* Uso flex para distribuir los iconos de redes sociales y el email */
 .socialContact {
     display: flex;
@@ -283,6 +294,7 @@ footer {
     margin-bottom: 30px;
     list-style: none;
 }
+
 /* Tamño de los iconos de 36px */
 .socialContact img {
     width: 36px;
@@ -304,10 +316,12 @@ footer {
     padding: 0 20px 0;
     margin: 10px;
 }
+
 /* con hover aplico una sombra blanca a los iconos*/
 .socialContact img:hover {
     box-shadow: 2px 2px 4px var(--blanco);
 }
+
 /* con hover aumento la fuente de los iconos */
 .socialContact li span:hover {
     font-size: 17px;

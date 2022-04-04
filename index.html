@@ -3,491 +3,423 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🏆 Fórmula Uno</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 Fórmula Uno</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <!-- El html de la tarea 1 se modificó para que sea más facil de aplicar estilos -->
 <!-- las clases se modificaron para escribirlas siguiendo el patrón camelCase recomendado en la clase  -->
 
 <body>
-  <!-- En el header va el logo y el menú de navegación para las cuatro secciones de la página -->
-  <header id="menu">
-    <nav class="menu">
-      <div class="logoNav">
-        <img src="./images/f1_logo.svg" alt="Formula1-logo" title="Formula one">
-      </div>
-      <ul>
-        <li><span><a href="#news" title="Últimas Noticias">Noticias</a></li></span>
-        <li><span><a href="#drivers" title="Información sobre los Pilotos">Pilotos</a></li></span>
-        <li><span><a href="#teams" title="Información sobre los equipos">Equipos</a></li></span>
-        <li><span><a href="#contact" title="Datos de Contacto">Contacto</a></li></span>
-      </ul>
-    </nav>
-  </header>
-  <!-- En main van las 3 secciones principales -->
-  <main>
-    <section id="news">
-      <h2>Últimas Noticias</h2>
-      <article class="articleNews">
-        <h3>"Mercedes no está en la pelea con Ferrari y Red Bull" dice <i>Lewis Hamilton.</i></h3>
-        <div class="cardNews">
-          <div class="cardNewsImage">
-            <img src="https://cdn-5.motorsport.com/images/mgl/0mb95oa2/s800/lewis-hamilton-mercedes-1.jpg"
-              title="Lewis Hamilton" alt="imñagen de Lewis Hamilton">
-          </div>
-          <p><b>Lewis Hamilton</b> y Mercedes serán grandes contendientes al campeonato, pero han aflorado todas las
-            incógnitas sobre su nivel en este primer envite, donde está sufriendo mucho con el ya célebre rebote, un
-            exceso de vibraciones que limitan el control del coche en recta y sobre todo en curva. El británico ha sido
-            quinto y saldrá por detrás de <b>Checo Pérez</b>.
-            "La sesión ha sido dura, pero estoy muy orgulloso de lo que hemos conseguido hacer, teniendo en cuenta los
-            problemas que tuvimos la semana pasada. Los chicos que están por delante de nosotros están a otro nivel en
-            este momento, pero hay mucho en juego mañana en la salida y con la estrategia, así que espero poder al menos
-            estar con ellos y
-            mantenerme en la lucha. No somos lo suficientemente rápidos para ganar, pero ya lo dije antes del fin de
-            semana. Parecía que estábamos más atrás la semana pasada, hemos hecho algunas mejoras y estamos más cerca,
-            así que estoy orgulloso de lo que hemos
-            conseguido y de dónde hemos llegado. Espero que demos otro paso la semana que viene y que poco a poco demos
-            caza a esos tipos. Las mejoras provienen de nuestros esfuerzos colectivos, estamos trabajando todo lo que
-            podemos y sé que queda un largo, largo camino por recorrer, pero me encantan los retos"
-          </p>
-        </div>
-      </article>
-      <article class="articleNews">
-        <h3> <i>Leclerc</i> da el golpe en Bahrein. Ganó la primera pole position del año. </h3>
-        <div class="cardNews">
-          <div class="cardNewsImage">
-            <img
-              src="https://media.diariouno.com.ar/p/24820555841271ce5989c4620f69dd86/adjuntos/298/imagenes/008/962/0008962863/1200x0/smart/leclerc-bahreinjpg.jpg"
-              alt="auto de Leclerc" title="Ferrari de Charles Leclerc">
-          </div>
-          <p>
-            La Fórmula 1 arranca este domingo con el <b>GP de Bahrein</b> (12:00 horas), que se disputa en Sakhir, un
-            trazado
-            exigente y
-            técnico donde después de una corta e intensa pretemporada empezaremos a saber dónde está cada uno, pudiendo
-            empezar a
-            hacernos una idea de lo que nos espera en una temporada que ha supuesto toda una revolución desde el punto
-            de
-            vista
-            técnico.
-            La nueva era de la Fórmula 1 auguraba cambios y realmente Ferrari ha dado un importante paso al frente.
-            <b>Charles
-              Leclerc</b>
-            se ha hecho con una pole position, que también ha acariciado <u>Carlos Sainz</u> y con <u>Max Verstappen</u>
-            ubicándose
-            entre
-            ambos.
-            El holandés, a tenor del ritmo de carrera mostrado durante los entrenamientos por el Red Bull, es el gran
-            favorito a la
-            primera victoria de la temporada, con permiso de ambos pilotos de Ferrari.
-          </p>
-        </div>
-      </article>
-    </section>
-    <!-- En la sección de pilotos hay una tabla con cuatro columnas un encabezado y 20 filas, una para cada piloto -->
-    <section id="drivers">
-      <h2>Pilotos de la temporada 2022</h2>
-      <table summary="Los pilotos de la temperoda 2022 de la Fórmula 1">
-        <thead>
-          <tr>
-            <th scope="col">Nombre y apellido</th>
-            <th scope="col">Edad</th>
-            <th scope="col">Equipo</th>
-            <th scope="col">Nacionalidad</th>
-          </tr>
-        </thead>
-        <!-- En la tércera columna se relaciona al piloto con su equipo que se detalla en la siguiente sección -->
-        <tbody>
-          <tr>
-            <td scope="row">Lewis Hamilton</td>
-            <td>37</td>
-            <td><a href="#mercedes">Mercedes-AMG Petronas Formula One Team</a></td>
-            <td>Inglés</td>
-          </tr>
-          <tr>
-            <td scope="row">George Russell</td>
-            <td>24</td>
-            <td><a href="#mercedes">Mercedes-AMG Petronas Formula One Team</a></td>
-            <td>Inglés</td>
-          </tr>
-          <tr>
-            <td scope="row">Max Verstappen</td>
-            <td>24</td>
-            <td><a href="#redBull">Oracle Red Bull Racing</a></td>
-            <td>Neerlandés</td>
-          </tr>
-          <tr>
-            <td scope="row">Sergio Pérez</td>
-            <td>32</td>
-            <td><a href="#redBull">Oracle Red Bull Racing</a></td>
-            <td>Mexicano</td>
-          </tr>
-          <tr>
-            <td scope="row">Charles Leclerc</td>
-            <td>24</td>
-            <td><a href="#ferrari">Scuderia Ferrari</a></td>
-            <td>Monegasco</td>
-          </tr>
-          <tr>
-            <td scope="row">Carlos Sainz Jr.</td>
-            <td>27</td>
-            <td><a href="#ferrari">Scuderia Ferrari</td>
-            <td>Español</td>
-          </tr>
-          <tr>
-            <td scope="row">Daniel Ricciardo</td>
-            <td>32</td>
-            <td><a href="#mclaren">McLaren F1 Team</a></td>
-            <td>Australiano</td>
-          </tr>
-          <tr>
-            <td scope="row">Lando Norris</td>
-            <td>22</td>
-            <td><a href="#mclaren">McLaren F1 Team</a></td>
-            <td>Inglés</td>
-          </tr>
-          <tr>
-            <td scope="row">Fernando Alonso</td>
-            <td>40</td>
-            <td><a href="#alpine">BWT Alpine F1 Team</a></td>
-            <td>Español</td>
-          </tr>
-          <tr>
-            <td scope="row">Esteban Ocon</td>
-            <td>25</td>
-            <td><a href="#alpine">BWT Alpine F1 Team</a></td>
-            <td>Francés</td>
-          </tr>
-          <tr>
-            <td scope="row">Pierre Gasly</td>
-            <td>26</td>
-            <td><a href="#alphaTauri">Scuderia AlphaTauri</a></td>
-            <td>Francés</td>
-          </tr>
-          <tr>
-            <td scope="row">Yuki Tsunoda</td>
-            <td>21</td>
-            <td><a href="#alphaTauri">Scuderia AlphaTauri</a></td>
-            <td>Japonés</td>
-          </tr>
-          <tr>
-            <td scope="row">Sebastian Vettel</td>
-            <td>34</td>
-            <td><a href="#astonMartin">Aston Martin Aramco Cognizant Formula One Team</a></td>
-            <td>Alemán</td>
-          </tr>
-          <tr>
-            <td scope="row">Lance Stroll</td>
-            <td>23</td>
-            <td><a href="#astonMartin">Aston Martin Aramco Cognizant Formula One Team</a></td>
-            <td>Canadiense</td>
-          </tr>
-          <tr>
-            <td scope="row">Nicholas Latifi</td>
-            <td>26</td>
-            <td><a href="#williams">Williams Racing</a></td>
-            <td>Canadiense</td>
-          </tr>
-          <tr>
-            <td scope="row">Alexander Albon</td>
-            <td>26</td>
-            <td><a href="#williams">Williams Racing</a></td>
-            <td>Tailandés</td>
-          </tr>
-          <tr>
-            <td scope="row">Gaunyu Zhou</td>
-            <td>22</td>
-            <td><a href="#alfaRomeo">Alfa Romeo F1 Team ORLEN</a></td>
-            <td>Chino</td>
-          </tr>
-          <tr>
-            <td scope="row">Valteri Bottas</td>
-            <td>32</td>
-            <td><a href="#alfaRomeo">Alfa Romeo F1 Team ORLEN</a></td>
-            <td>Finalandés</td>
-          </tr>
-          <tr>
-            <td scope="row">Kevin Magnussen</td>
-            <td>29</td>
-            <td><a href="#haas">Haas F1 Team</a></td>
-            <td>Dinamarqués</td>
-          </tr>
-          <tr>
-            <td scope="row">Mick Schumacher</td>
-            <td>23</td>
-            <td><a href="#haas">Haas F1 Team</a></td>
-            <td>Alemán</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <!-- para la sección de pilotos se arman cards con fotos del auto y los pilotos -->
-    <section id="teams">
-      <h2>Equipos de la temporada 2022</h2>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="mercedes">Mercedes-AMG Petronas Formula One Team</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/mercedes.png.transform/4col-retina/image.png"
-            alt="auto de mercedes">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1024.medium.jpg/1647334259839.jpg"
-              alt="Lewis Hamilton">
-            <p>Lewis Hamilton</p>
-          </div>
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/george-russell/_jcr_content/image.img.1024.medium.jpg/1646750994602.jpg"
-              alt="George russell">
-            <p>George Russell</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="alpine">BWT Alpine F1 Team</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/alpine.png.transform/4col-retina/image.png"
-            alt="auto de alpine">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/fernando-alonso/_jcr_content/image.img.1024.medium.jpg/1647334212592.jpg"
-              alt="Fernando Alonso">
-            <p>Fernando alonso</p>
-          </div>
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/esteban-ocon/_jcr_content/image.img.1024.medium.jpg/1647334188097.jpg"
-              alt="Esteban Ocon">
-            <p>Esteban Ocon</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="haas">Haas F1 Team</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/haas-f1-team.png.transform/4col-retina/image.png"
-            alt="auto de haas">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1024.medium.jpg/1647447969295.jpg"
-              alt="Kevin Magnussen">
-            <p>Kevin Magnussen</p>
-          </div>
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/mick-schumacher/_jcr_content/image.img.1024.medium.jpg/1647334235171.jpg"
-              alt="Mick Schumacher">
-            <p>Mick Schumacher</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="redBull">Oracle Red Bull Racing</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/red-bull-racing.png.transform/6col/image.png"
-            alt="auto de red bull">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1024.medium.jpg/1646819045507.jpg"
-              alt="Max Verstappen">
-            <p>Max Verstappen</p>
-          </div>
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1024.medium.jpg/1646819228700.jpg"
-              alt="Sergio Perez">
-            <p>Sergio Perez</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="mclaren">McLaren F1 Team</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/mclaren.png.transform/4col-retina/image.png"
-            alt="auto de haas">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1024.medium.jpg/1646819013197.jpg"
-              alt="Lando Norris">
-            <p>Lando Norris</p>
-          </div>
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1024.medium.jpg/1646818924510.jpg"
-              alt="Daniel Ricciardo">
-            <p>Daniel Ricciardo</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="astonMartin">Aston Martin Aramco Cognizant Formula One Team</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin.png.transform/4col-retina/image.png"
-            alt="auto de aston martin">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1024.medium.jpg/1646818813887.jpg"
-              alt="Sebastian Vettel">
-            <p>Sebastian Vettel</p>
-          </div>
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/lance-stroll/_jcr_content/image.img.1024.medium.jpg/1647334288083.jpg"
-              alt="Lance Stroll">
-            <p>Lance stroll</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="ferrari">Scuderia Ferrari</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari.png.transform/4col-retina/image.png"
-            alt="auto de aston martin">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1024.medium.jpg/1646818893219.jpg"
-              alt="Charles Leclerc">
-            <p>Charles Leclerc</p>
-          </div>
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/carlos-sainz/_jcr_content/image.img.1024.medium.jpg/1646818866749.jpg"
-              alt="Carlos Sainz">
-            <p>Carlos Sainz</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="alphaTauri">Scuderia AlphaTauri</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/alphatauri.png.transform/4col-retina/image.png"
-            alt="auto de alpha tauri">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/pierre-gasly/_jcr_content/image.img.1024.medium.jpg/1646819179303.jpg"
-              alt="Pierre Gasly">
-            <p>Pierre Gasly</p>
-          </div>
+    <!-- En el header va el logo y el menú de navegación para las cuatro secciones de la página -->
+    <header id="menu">
+        <nav class="menu">
+            <div class="logoNav">
+                <img src="./images/f1_logo.svg" alt="Formula1-logo" title="Formula one">
+            </div>
+            <ul>
+                <li><span><a href="#news" title="Últimas Noticias">Noticias</a></li></span>
+                <li><span><a href="#drivers" title="Información sobre los Pilotos">Pilotos</a></li></span>
+                <li><span><a href="#teams" title="Información sobre los equipos">Equipos</a></li></span>
+                <li><span><a href="#contact" title="Datos de Contacto">Contacto</a></li></span>
+            </ul>
+        </nav>
+    </header>
+    <!-- En main van las 3 secciones principales -->
+    <main>
+        <section id="news">
+            <h2>Últimas Noticias</h2>
+            <article class="articleNews">
+                <h3>"Mercedes no está en la pelea con Ferrari y Red Bull" dice <i>Lewis Hamilton.</i></h3>
+                <div class="cardNews">
+                    <div class="cardNewsImage">
+                        <img src="https://cdn-5.motorsport.com/images/mgl/0mb95oa2/s800/lewis-hamilton-mercedes-1.jpg" title="Lewis Hamilton" alt="imñagen de Lewis Hamilton">
+                    </div>
+                    <p><b>Lewis Hamilton</b> y Mercedes serán grandes contendientes al campeonato, pero han aflorado todas las
+                        incógnitas sobre su nivel en este primer envite, donde está sufriendo mucho con el ya célebre rebote, un
+                        exceso de vibraciones que limitan el control del coche en recta y sobre todo en curva. El británico ha sido
+                        quinto y saldrá por detrás de <b>Checo Pérez</b>.
+                        "La sesión ha sido dura, pero estoy muy orgulloso de lo que hemos conseguido hacer, teniendo en cuenta los
+                        problemas que tuvimos la semana pasada. Los chicos que están por delante de nosotros están a otro nivel en
+                        este momento, pero hay mucho en juego mañana en la salida y con la estrategia, así que espero poder al menos
+                        estar con ellos y
+                        mantenerme en la lucha. No somos lo suficientemente rápidos para ganar, pero ya lo dije antes del fin de
+                        semana. Parecía que estábamos más atrás la semana pasada, hemos hecho algunas mejoras y estamos más cerca,
+                        así que estoy orgulloso de lo que hemos
+                        conseguido y de dónde hemos llegado. Espero que demos otro paso la semana que viene y que poco a poco demos
+                        caza a esos tipos. Las mejoras provienen de nuestros esfuerzos colectivos, estamos trabajando todo lo que
+                        podemos y sé que queda un largo, largo camino por recorrer, pero me encantan los retos"
+                    </p>
+                </div>
+            </article>
+            <article class="articleNews">
+                <h3> <i>Leclerc</i> da el golpe en Bahrein. Ganó la primera pole position del año. </h3>
+                <div class="cardNews">
+                    <div class="cardNewsImage">
+                        <img src="https://media.diariouno.com.ar/p/24820555841271ce5989c4620f69dd86/adjuntos/298/imagenes/008/962/0008962863/1200x0/smart/leclerc-bahreinjpg.jpg" alt="auto de Leclerc" title="Ferrari de Charles Leclerc">
+                    </div>
+                    <p>
+                        La Fórmula 1 arranca este domingo con el <b>GP de Bahrein</b> (12:00 horas), que se disputa en Sakhir, un
+                        trazado
+                        exigente y
+                        técnico donde después de una corta e intensa pretemporada empezaremos a saber dónde está cada uno, pudiendo
+                        empezar a
+                        hacernos una idea de lo que nos espera en una temporada que ha supuesto toda una revolución desde el punto
+                        de
+                        vista
+                        técnico.
+                        La nueva era de la Fórmula 1 auguraba cambios y realmente Ferrari ha dado un importante paso al frente.
+                        <b>Charles
+                            Leclerc</b>
+                        se ha hecho con una pole position, que también ha acariciado <u>Carlos Sainz</u> y con <u>Max Verstappen</u>
+                        ubicándose
+                        entre
+                        ambos.
+                        El holandés, a tenor del ritmo de carrera mostrado durante los entrenamientos por el Red Bull, es el gran
+                        favorito a la
+                        primera victoria de la temporada, con permiso de ambos pilotos de Ferrari.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <!-- En la sección de pilotos hay una tabla con cuatro columnas un encabezado y 20 filas, una para cada piloto -->
+        <section id="drivers">
+            <h2>Pilotos de la temporada 2022</h2>
+            <table summary="Los pilotos de la temperoda 2022 de la Fórmula 1">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre y apellido</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Equipo</th>
+                        <th scope="col">Nacionalidad</th>
+                    </tr>
+                </thead>
+                <!-- En la tércera columna se relaciona al piloto con su equipo que se detalla en la siguiente sección -->
+                <tbody>
+                    <tr>
+                        <td scope="row">Lewis Hamilton</td>
+                        <td>37</td>
+                        <td><a href="#mercedes">Mercedes-AMG Petronas Formula One Team</a></td>
+                        <td>Inglés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">George Russell</td>
+                        <td>24</td>
+                        <td><a href="#mercedes">Mercedes-AMG Petronas Formula One Team</a></td>
+                        <td>Inglés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Max Verstappen</td>
+                        <td>24</td>
+                        <td><a href="#redBull">Oracle Red Bull Racing</a></td>
+                        <td>Neerlandés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Sergio Pérez</td>
+                        <td>32</td>
+                        <td><a href="#redBull">Oracle Red Bull Racing</a></td>
+                        <td>Mexicano</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Charles Leclerc</td>
+                        <td>24</td>
+                        <td><a href="#ferrari">Scuderia Ferrari</a></td>
+                        <td>Monegasco</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Carlos Sainz Jr.</td>
+                        <td>27</td>
+                        <td><a href="#ferrari">Scuderia Ferrari</td>
+                        <td>Español</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Daniel Ricciardo</td>
+                        <td>32</td>
+                        <td><a href="#mclaren">McLaren F1 Team</a></td>
+                        <td>Australiano</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Lando Norris</td>
+                        <td>22</td>
+                        <td><a href="#mclaren">McLaren F1 Team</a></td>
+                        <td>Inglés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Fernando Alonso</td>
+                        <td>40</td>
+                        <td><a href="#alpine">BWT Alpine F1 Team</a></td>
+                        <td>Español</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Esteban Ocon</td>
+                        <td>25</td>
+                        <td><a href="#alpine">BWT Alpine F1 Team</a></td>
+                        <td>Francés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Pierre Gasly</td>
+                        <td>26</td>
+                        <td><a href="#alphaTauri">Scuderia AlphaTauri</a></td>
+                        <td>Francés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Yuki Tsunoda</td>
+                        <td>21</td>
+                        <td><a href="#alphaTauri">Scuderia AlphaTauri</a></td>
+                        <td>Japonés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Sebastian Vettel</td>
+                        <td>34</td>
+                        <td><a href="#astonMartin">Aston Martin Aramco Cognizant Formula One Team</a></td>
+                        <td>Alemán</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Lance Stroll</td>
+                        <td>23</td>
+                        <td><a href="#astonMartin">Aston Martin Aramco Cognizant Formula One Team</a></td>
+                        <td>Canadiense</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Nicholas Latifi</td>
+                        <td>26</td>
+                        <td><a href="#williams">Williams Racing</a></td>
+                        <td>Canadiense</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Alexander Albon</td>
+                        <td>26</td>
+                        <td><a href="#williams">Williams Racing</a></td>
+                        <td>Tailandés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Gaunyu Zhou</td>
+                        <td>22</td>
+                        <td><a href="#alfaRomeo">Alfa Romeo F1 Team ORLEN</a></td>
+                        <td>Chino</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Valteri Bottas</td>
+                        <td>32</td>
+                        <td><a href="#alfaRomeo">Alfa Romeo F1 Team ORLEN</a></td>
+                        <td>Finalandés</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Kevin Magnussen</td>
+                        <td>29</td>
+                        <td><a href="#haas">Haas F1 Team</a></td>
+                        <td>Dinamarqués</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Mick Schumacher</td>
+                        <td>23</td>
+                        <td><a href="#haas">Haas F1 Team</a></td>
+                        <td>Alemán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- para la sección de pilotos se arman cards con fotos del auto y los pilotos -->
+        <section id="teams">
+            <h2>Equipos de la temporada 2022</h2>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="mercedes">Mercedes-AMG Petronas Formula One Team</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/mercedes.png.transform/4col-retina/image.png" alt="auto de mercedes">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1024.medium.jpg/1647334259839.jpg" alt="Lewis Hamilton">
+                        <p>Lewis Hamilton</p>
+                    </div>
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/george-russell/_jcr_content/image.img.1024.medium.jpg/1646750994602.jpg" alt="George russell">
+                        <p>George Russell</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="alpine">BWT Alpine F1 Team</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/alpine.png.transform/4col-retina/image.png" alt="auto de alpine">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/fernando-alonso/_jcr_content/image.img.1024.medium.jpg/1647334212592.jpg" alt="Fernando Alonso">
+                        <p>Fernando alonso</p>
+                    </div>
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/esteban-ocon/_jcr_content/image.img.1024.medium.jpg/1647334188097.jpg" alt="Esteban Ocon">
+                        <p>Esteban Ocon</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="haas">Haas F1 Team</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/haas-f1-team.png.transform/4col-retina/image.png" alt="auto de haas">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1024.medium.jpg/1647447969295.jpg" alt="Kevin Magnussen">
+                        <p>Kevin Magnussen</p>
+                    </div>
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/mick-schumacher/_jcr_content/image.img.1024.medium.jpg/1647334235171.jpg" alt="Mick Schumacher">
+                        <p>Mick Schumacher</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="redBull">Oracle Red Bull Racing</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/red-bull-racing.png.transform/6col/image.png" alt="auto de red bull">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1024.medium.jpg/1646819045507.jpg" alt="Max Verstappen">
+                        <p>Max Verstappen</p>
+                    </div>
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1024.medium.jpg/1646819228700.jpg" alt="Sergio Perez">
+                        <p>Sergio Perez</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="mclaren">McLaren F1 Team</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/mclaren.png.transform/4col-retina/image.png" alt="auto de haas">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1024.medium.jpg/1646819013197.jpg" alt="Lando Norris">
+                        <p>Lando Norris</p>
+                    </div>
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1024.medium.jpg/1646818924510.jpg" alt="Daniel Ricciardo">
+                        <p>Daniel Ricciardo</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="astonMartin">Aston Martin Aramco Cognizant Formula One Team</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin.png.transform/4col-retina/image.png" alt="auto de aston martin">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1024.medium.jpg/1646818813887.jpg" alt="Sebastian Vettel">
+                        <p>Sebastian Vettel</p>
+                    </div>
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/lance-stroll/_jcr_content/image.img.1024.medium.jpg/1647334288083.jpg" alt="Lance Stroll">
+                        <p>Lance stroll</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="ferrari">Scuderia Ferrari</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari.png.transform/4col-retina/image.png" alt="auto de aston martin">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1024.medium.jpg/1646818893219.jpg" alt="Charles Leclerc">
+                        <p>Charles Leclerc</p>
+                    </div>
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/carlos-sainz/_jcr_content/image.img.1024.medium.jpg/1646818866749.jpg" alt="Carlos Sainz">
+                        <p>Carlos Sainz</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="alphaTauri">Scuderia AlphaTauri</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/alphatauri.png.transform/4col-retina/image.png" alt="auto de alpha tauri">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/pierre-gasly/_jcr_content/image.img.1024.medium.jpg/1646819179303.jpg" alt="Pierre Gasly">
+                        <p>Pierre Gasly</p>
+                    </div>
 
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/yuki-tsunoda/_jcr_content/image.img.1024.medium.jpg/1647334309285.jpg"
-              alt="Yuki Tsunoda">
-            <p>Yuki Tsunoda</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="alfaRomeo">Alfa Romeo F1 Team ORLEN</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo.png.transform/4col-retina/image.png"
-            alt="auto de alfa romeo">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1024.medium.jpg/1646819266274.jpg"
-              alt="Valteri Bottas">
-            <p>Valteri Bottas</p>
-          </div>
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/guanyu-zhou/_jcr_content/image.img.1024.medium.jpg/1646818979975.jpg"
-              alt="Zhou Guanyu">
-            <p>Zhou Guanyu</p>
-          </div>
-        </div>
-      </article>
-      <article class="cardTeam">
-        <div class="cardTeamLeft">
-          <h3 id="williams">Williams Racing</h3>
-          <img
-            src="https://www.formula1.com/content/dam/fom-website/teams/2022/williams.png.transform/4col-retina/image.png"
-            alt="auto de williams">
-        </div>
-        <div class="cardTeamRight">
-          <div class="cardTeamDriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/_jcr_content/image.img.1024.medium.jpg/1646750995556.jpg"
-              alt="Alexander Albon">
-            <p>Alexander Albon</p>
-          </div>
-          <div class="cardTeamdriver">
-            <img
-              src="https://www.formula1.com/content/fom-website/en/drivers/nicholas-latifi/_jcr_content/image.img.1024.medium.jpg/1646819118069.jpg"
-              alt="Nicholas Latifi">
-            <p>Nicholas Latifi</p>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-  <!-- en el footer se encuentra la última sección de la página, en la primera parte las redes sociales y mi correo y luego el logo de la F1 y una sección de derechos reservados -->
-  <footer id="contact">
-    <section class="contacts">
-      <h2>Contacto</h2>
-      <ul class="socialContact">
-        <li>
-          <a href="https://es-la.facebook.com/"><img
-              src="
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/yuki-tsunoda/_jcr_content/image.img.1024.medium.jpg/1647334309285.jpg" alt="Yuki Tsunoda">
+                        <p>Yuki Tsunoda</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="alfaRomeo">Alfa Romeo F1 Team ORLEN</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo.png.transform/4col-retina/image.png" alt="auto de alfa romeo">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1024.medium.jpg/1646819266274.jpg" alt="Valteri Bottas">
+                        <p>Valteri Bottas</p>
+                    </div>
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/guanyu-zhou/_jcr_content/image.img.1024.medium.jpg/1646818979975.jpg" alt="Zhou Guanyu">
+                        <p>Zhou Guanyu</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cardTeam">
+                <div class="cardTeamLeft">
+                    <h3 id="williams">Williams Racing</h3>
+                    <img src="https://www.formula1.com/content/dam/fom-website/teams/2022/williams.png.transform/4col-retina/image.png" alt="auto de williams">
+                </div>
+                <div class="cardTeamRight">
+                    <div class="cardTeamDriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/_jcr_content/image.img.1024.medium.jpg/1646750995556.jpg" alt="Alexander Albon">
+                        <p>Alexander Albon</p>
+                    </div>
+                    <div class="cardTeamdriver">
+                        <img src="https://www.formula1.com/content/fom-website/en/drivers/nicholas-latifi/_jcr_content/image.img.1024.medium.jpg/1646819118069.jpg" alt="Nicholas Latifi">
+                        <p>Nicholas Latifi</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- en el footer se encuentra la última sección de la página, en la primera parte las redes sociales y mi correo y luego el logo de la F1 y una sección de derechos reservados -->
+    <footer id="contact">
+        <section class="contacts">
+            <h2>Contacto</h2>
+            <ul class="socialContact">
+                <li>
+                    <a href="https://es-la.facebook.com/"><img src="
               https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/2048px-Facebook_logo_36x36.svg.png" alt="logo facebook">
-            <span>facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/?hl=es-la"><img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
-              alt="logo instagram">
-            <span>instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://ar.linkedin.com/"><img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"
-              alt="logo linkedin">
-            <span>linkedin</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:jorge.niglia@gmail.com"><span>jorge.niglia@gmail.com</span></a>
-        </li>
-      </ul>
-    </section>
-    <section class="footerBottom">
-      <div class="logoNav">
-        <img src="./images/f1_logo.svg" alt="Formula1-logo" title="Formula one">
-      </div>
-      <p>2022 - Formula Uno - todos los derechos reservados</p>
-    </section>
-  </footer>
+                        <span>facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=es-la"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="logo instagram">
+                        <span>instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ar.linkedin.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png" alt="logo linkedin">
+                        <span>linkedin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:jorge.niglia@gmail.com"><span>jorge.niglia@gmail.com</span></a>
+                </li>
+            </ul>
+        </section>
+        <section class="footerBottom">
+            <div class="logoNav">
+                <img src="./images/f1_logo.svg" alt="Formula1-logo" title="Formula one">
+            </div>
+            <p>2022 - Formula Uno - todos los derechos reservados</p>
+        </section>
+    </footer>
 </body>
 
 </html>
